@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import navbar from './Home/Navbar'
 import Navbar from './Home/Navbar'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import Home from './Home/Home'
