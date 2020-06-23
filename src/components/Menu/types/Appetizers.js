@@ -17,7 +17,7 @@ export default class Appetizers extends Component {
             .then(response => response.json())
             .then(json => this.setState({items:json}) )
     }
-
+    
     render() {
         const foodItems = this.state.items.map(
             (item) => {
@@ -26,7 +26,6 @@ export default class Appetizers extends Component {
                 )
             }
         )
-        console.log(this.state.items)
         return (    
             <div className="menu-wrapper">
                 {

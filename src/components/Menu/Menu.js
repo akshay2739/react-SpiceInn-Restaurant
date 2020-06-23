@@ -1,5 +1,5 @@
 import React from 'react';
-import { useRouteMatch,  Switch, Route, BrowserRouter } from 'react-router-dom';
+import { useRouteMatch,  Switch, Route, BrowserRouter, useLocation, withRouter } from 'react-router-dom';
 import MenuHeader from './MenuHeader';
 import Appetizers from './types/Appetizers'
 import Breads from './types/Breads'
@@ -8,26 +8,38 @@ import Drinks from './types/Drinks'
 import LunchCombos from './types/LunchCombos'
 import Mains from './types/Mains'
 import RiceCombos from './types/RiceCombo'
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
+import './Menu.css'
 
 const Menu = () => {
-    let  {url} = useRouteMatch()
+    let  {path} = useRouteMatch()
+    let location = useLocation()
     
     return (
-            <BrowserRouter>
+            <div>
                 <MenuHeader />
-                <Switch>
-                    <Route exact path={url+'/appetizers'} component={Appetizers} />
-                    <Route exact path={url+'/breads'} component={Breads} />
-                    <Route exact path={url+'/desserts'} component={Desserts} />
-                    <Route exact path={url+'/drinks'} component={Drinks} />
-                    <Route exact path={url+'/lunchcombos'} component={LunchCombos} />
-                    <Route exact path={url+'/mains'} component={Mains} />
-                    <Route exact path={url+'/ricecombos'} component={RiceCombos} />
-                </Switch>
-            </BrowserRouter>
-                
+                <AnimatedSwitch path={path} />
+            </div>
      
     );
 }
 
 export default Menu;
+
+const AnimatedSwitch = withRouter(({ location , path}) => (
+    <TransitionGroup>
+      <CSSTransition key={location.key} classNames="slide" timeout={1000}>
+        <Switch location={location}>
+            
+                        <Route  path={path+'/appetizers'} component={Appetizers} />
+                        <Route  path={path+'/breads'} component={Breads} />
+                        <Route  path={path+'/desserts'} component={Desserts} />
+                        <Route  path={path+'/drinks'} component={Drinks} />
+                        <Route  path={path+'/lunchcombos'} component={LunchCombos} />
+                        <Route  path={path+'/mains'} component={Mains} />
+                        <Route  path={path+'/ricecombos'} component={RiceCombos} />
+        </Switch>
+      </CSSTransition>
+    </TransitionGroup>
+  ));
+
