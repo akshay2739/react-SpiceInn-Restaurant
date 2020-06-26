@@ -38,6 +38,12 @@ export default class Navbar extends Component {
         }
     }
 
+    handleClick = () => {
+        if(this.state.opened){
+            this.openNav()
+        }
+    }
+
     render() {
         return (
                 <div className="header">
@@ -55,13 +61,14 @@ export default class Navbar extends Component {
                     <div className="nav-bar" style = {this.state.navStyle}>
 
                         <NavLink 
+                            onClick={() => this.handleClick()}
                             to="/about" 
                             activeClassName="selected" 
                             className="nav-link"
                         > About</NavLink>
 
                         <NavLink 
-                            to="/menu" 
+                            to="/menu/mains" 
                             activeClassName="selected"
                             className="nav-link"
                         > Menu</NavLink>

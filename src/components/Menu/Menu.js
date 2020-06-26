@@ -17,6 +17,9 @@ const Menu = () => {
     
     return (
             <div>
+                <div className="page-name">
+                  <p>Menu</p>
+                </div>
                 <MenuHeader />
                 <AnimatedSwitch path={path} />
             </div>
@@ -30,13 +33,12 @@ const AnimatedSwitch = withRouter(({ location , path}) => (
     <TransitionGroup>
       <CSSTransition key={location.key} classNames="slide" timeout={1000}>
         <Switch location={location}>
-            
+                        <Route  exact path={path+'/mains'} component={Mains} />
                         <Route  path={path+'/appetizers'} component={Appetizers} />
                         <Route  path={path+'/breads'} component={Breads} />
                         <Route  path={path+'/desserts'} component={Desserts} />
                         <Route  path={path+'/drinks'} component={Drinks} />
                         <Route  path={path+'/lunchcombos'} component={LunchCombos} />
-                        <Route  path={path+'/mains'} component={Mains} />
                         <Route  path={path+'/ricecombos'} component={RiceCombos} />
         </Switch>
       </CSSTransition>

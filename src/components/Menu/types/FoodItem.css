@@ -1,54 +1,59 @@
-.food-item-wrapper{
-    width: 30%;
+.food-card{ 
+	width: 45%;
+	display: flex;
+	margin: 10px;
+	align-items: center;
 }
 
-.food-image{
-    width: 100%;
+.food-text{
+	width: 100%;
+	justify-content: space-between;
 }
 
-.why-text {
-    position: absolute;
-    left: 0;
-    bottom: -100%;
-    right: 0;
-    height: 100%;
-    background: rgba(207, 166, 113, 0.9);
-    padding: 12px 12px;
-    -webkit-transition: all .3s ease;
-    transition: all .3s ease;
-}
-.why-text h4{
-	color: #ffffff;
-	font-size: 24px;
-	font-weight: 500;
-	font-family: 'Arbutus Slab', serif;
-}
-.why-text p{
-	color: #ffffff;
-	font-size: 18px;
-	border-bottom: 1px dashed #010101;
-	margin: 0px;
-	padding-bottom: 15px;
-	margin-top: 15px;
-	margin-bottom: 15px;
-}
-.why-text h5{
-	font-size: 28px;
-	font-weight: 600;
-	color: #ffffff;
+.food-item-image{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
 }
 
-.gallery-single:hover .why-text{
-	bottom: 0px;
+.food-card-header{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	border-bottom: dotted 2px #ad0023;
+	padding: 5px;
+	padding-bottom: 0;
+	min-height: auto;
 }
 
-.gallery-single{
-	margin: 30px 0px;
+.food-item-name{
+	font-size: 20px;
+	font-weight: 700;
 }
 
-.gallery-single {
-    position: relative;
-    overflow: hidden;
-    -webkit-box-shadow: 0 0 10px #ccc;
-    box-shadow: 0 0 10px #ccc;
+.food-item-price{
+	color: #ad0023;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.food-item-description{
+	text-align: left;
+	padding: 5px;
+	width: 100%;
+	font-size: 15px;
+	
+}
+
+@media only screen and (max-width:768px){
+	.food-card{
+		width: 100%;	
+	}
+	
+	.food-item-image{
+		width: 125px;
+		height: 125px;
+		border-radius: 50%;
+	}
+	
 }

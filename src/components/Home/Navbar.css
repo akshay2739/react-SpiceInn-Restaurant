@@ -18,10 +18,12 @@
 }
 
 .nav-bar{
-    width: 40%;
+    width: 30%;
     align-items: center;
     justify-content: space-between;
     display: flex;
+    font-size: 20px;
+    font-weight: 700;
     transition: 0.5s;
 }
 
@@ -35,10 +37,11 @@
 }
 
 .selected{
-    background: #d0a772;
+    background:#ad0023;
     color: #ffffff;
     padding: 10px;
 }
+
 
 @media only screen and (max-width:768px)
 {
@@ -53,7 +56,7 @@
     .logo a{
         margin-left: 10px;
     }
-
+    
     .nav-button{
         display: contents;
         font-size: 25px;
