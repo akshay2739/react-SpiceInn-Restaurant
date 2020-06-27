@@ -1,0 +1,38 @@
+.page-name{
+    background-image: url("../../assets/images/img-03.jpg");
+    background-size: cover;
+    color: white;
+    height: 145px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.page-name p{
+    font-size: 40px;
+    font-weight: 600;
+  }
+  
+.about-wrapper{
+    width: 60%;
+    margin-left: 20%;
+    text-align: left;
+}
+
+.about-wrapper h1{
+    color: #ad0023;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.about-wrapper p {
+    font-size: 20px;
+}
+
+@media only screen and (max-width:768px){
+    .about-wrapper{
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+        line-height: 2rem;
+    }
+}

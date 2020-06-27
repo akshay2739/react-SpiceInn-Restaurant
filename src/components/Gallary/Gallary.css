@@ -1,3 +1,17 @@
+.page-name{
+  background-image: url("../../assets/images/img-03.jpg");
+  background-size: cover;
+  color: white;
+  height: 145px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page-name p{
+  font-size: 40px;
+  font-weight: 600;
+}
+
 .main{
     max-width: 1200px;
     margin: 0 auto;

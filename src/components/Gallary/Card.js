@@ -9,8 +9,8 @@ class Card extends Component {
                 <div class="card">
                     <div class="card_image"><img src={image} /></div>
                     <div class="card_content">
-                        <h2 class="card_title">Card Grid Layout</h2>
-                        <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+                        <h2 class="card_title">Hello world</h2>
+                        <p class="card_text">Blah blah blah blah blah blah</p>
                     </div>
                 </div>
             </li>
