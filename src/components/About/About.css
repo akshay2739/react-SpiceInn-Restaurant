@@ -35,4 +35,8 @@
         padding: 20px;
         line-height: 2rem;
     }
+
+    .col{
+        margin-top: 15px;
+    }
 }
