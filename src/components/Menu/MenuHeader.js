@@ -11,12 +11,12 @@ const MenuHeader = () => {
                     activeClassName="selected-menu"
                     className="nav-link"
                     >Appetizers</NavLink>
-                <NavLink to={url+'/breads'} activeClassName="selected-menu" className="nav-link" >Breads</NavLink>
-                <NavLink to={url+'/desserts'} activeClassName="selected-menu" className="nav-link" >Desserts</NavLink>
-                <NavLink to={url+'/drinks'} activeClassName="selected-menu" className="nav-link" >Drinks</NavLink>
-                <NavLink to={url+'/lunchcombos'} activeClassName="selected-menu" className="nav-link" >Lunch Combos</NavLink>
-                <NavLink to={url+'/mains'} className="nav-link" activeClassName="selected-menu" >Mains</NavLink>
-                <NavLink to={url+'/ricecombos'} className="nav-link" activeClassName="selected-menu" >Rice Combos</NavLink>
+                <NavLink exact to={url+'/breads'} activeClassName="selected-menu" className="nav-link" >Breads</NavLink>
+                <NavLink exact to={url+'/desserts'} activeClassName="selected-menu" className="nav-link" >Desserts</NavLink>
+                <NavLink exact to={url+'/drinks'} activeClassName="selected-menu" className="nav-link" >Drinks</NavLink>
+                <NavLink exact to={url+'/lunchcombos'} activeClassName="selected-menu" className="nav-link" >Lunch Combos</NavLink>
+                <NavLink exact to={url+'/mains'} className="nav-link" activeClassName="selected-menu" >Mains</NavLink>
+                <NavLink exact to={url+'/ricecombos'} className="nav-link" activeClassName="selected-menu" >Rice Combos</NavLink>
             </div>
         )
     }

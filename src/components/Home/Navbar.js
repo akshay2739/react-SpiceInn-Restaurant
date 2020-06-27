@@ -68,7 +68,7 @@ export default class Navbar extends Component {
                         > About</NavLink>
 
                         <NavLink 
-                            to="/menu/mains" 
+                            to="/menu" 
                             activeClassName="selected"
                             className="nav-link"
                         > Menu</NavLink>
