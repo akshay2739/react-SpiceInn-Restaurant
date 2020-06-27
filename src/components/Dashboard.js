@@ -6,6 +6,7 @@ import About from './About/About'
 import Menu from './Menu/Menu'
 import Gallary from './Gallary/Gallary'
 import Contact from './Contact/Contact'
+import Footer from './Footer'
 
 export default class Dashboard extends Component {
     render() {
@@ -19,6 +20,7 @@ export default class Dashboard extends Component {
                     <Route path="/Gallary" component={Gallary} />
                     <Route path="/contact" component={Contact} />
                 </Switch>
+                <Footer />
             </BrowserRouter>
         )
     }
