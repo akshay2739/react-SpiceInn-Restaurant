@@ -33,7 +33,7 @@ const AnimatedSwitch = withRouter(({ location , path}) => (
     <TransitionGroup>
       <CSSTransition key={location.key} classNames="slide" timeout={1000}>
         <Switch location={location}>
-                        <Route  exact path={path+'/mains'} component={Mains} />
+                        <Route  exact path={path} component={Mains} />
                         <Route  exact path={path+'/appetizers'} component={Appetizers} />
                         <Route  exact path={path+'/breads'} component={Breads} />
                         <Route  exact path={path+'/desserts'} component={Desserts} />
