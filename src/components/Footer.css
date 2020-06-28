@@ -5,6 +5,7 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 10px;
+    padding: 10px;
     
 }
 
@@ -52,6 +53,12 @@ a{
     .map{
         width: 90%;
         margin-left: 5%;
+        margin-right: 5%;
+        text-align: center;
+    }
+
+    .map i {
+        width: 100%;
     }
 
     .services h1{
@@ -61,6 +68,7 @@ a{
     .services{
         width: 90%;
         margin-left: 5%;
+        margin-right: 5%;
         text-align: center;
     }
 

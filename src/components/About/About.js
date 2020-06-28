@@ -8,7 +8,7 @@ export default class About extends Component {
                 <div className="page-name">
                   <p>About</p>
                 </div>
-                <div className="about-wrapper">
+                <div className="about-wrapper shadow-lg  bg-white">
                     <h1>Spice inn</h1>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt nobis, numquam eligendi, libero enim consequuntur accusamus sapiente assumenda nostrum officia voluptatem ad, ullam repudiandae iure maiores possimus mollitia ipsum debitis.
                         Reprehenderit eveniet in molestias modi veniam id placeat cumque nisi impedit? Numquam culpa, suscipit atque fugit quia voluptas aliquam officia, laudantium quae nihil vitae assumenda voluptatem, aperiam dignissimos? Totam, quos!

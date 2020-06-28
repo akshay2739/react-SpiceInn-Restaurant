@@ -3,7 +3,6 @@
     padding:0px;
 }
 
-
 .header{
     display: flex;
     justify-content: space-between;
@@ -12,9 +11,23 @@
     box-shadow: 5px 10px 8px #888888
 }
 
-.logo{
+.logo img{
+    width: 50px;
+    height: 50px;
+}
+
+.logo-name{
     display: flex;
+    justify-content: flex-start;
     align-items: center;
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.logo-name p {
+    margin-top: 18px;
 }
 
 .nav-bar{
@@ -45,6 +58,7 @@
 
 @media only screen and (max-width:768px)
 {
+    
     .header{
         display: flex;
         flex-direction: column;
@@ -60,7 +74,7 @@
     .nav-button{
         display: contents;
         font-size: 25px;
-        color: black;
+        color: #ad0023;
         margin-left: 40px;
         cursor:pointer;
        
@@ -79,10 +93,10 @@
     }
     .nav-bar{
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
         display:none;
+        height: 68vh;
         flex-direction: column;
-        padding-top: 15px;
     }
 
     

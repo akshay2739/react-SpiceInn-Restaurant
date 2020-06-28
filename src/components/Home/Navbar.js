@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Navbar.css'
+import logo from '../../assets/images/logo.png'
 
 export default class Navbar extends Component {
 
@@ -11,7 +12,7 @@ export default class Navbar extends Component {
             navStyle:{
                  
             },
-            opened:false
+            opened:true
         }
     }
     
@@ -20,9 +21,6 @@ export default class Navbar extends Component {
         {
             this.setState({navStyle:{
                 display:'flex',
-                width:'100%',
-                height:'100%',
-                transition:'0.3'    
         }})
         this.setState({opened:!this.state.opened})
         } 
@@ -30,9 +28,6 @@ export default class Navbar extends Component {
         {
             this.setState({navStyle:{
                 display:'none',
-                width:'100%',
-                height:'100%'
-            
             }})
             this.setState({opened:!this.state.opened})
         }
@@ -46,15 +41,14 @@ export default class Navbar extends Component {
 
     render() {
         return (
-                <div className="header">
+                <div className="header shadow-lg  bg-white">
                     <div className="logo">
                         <NavLink 
-                                exact to="/"
-                                activeClassName="selected" 
-                                className="nav-link"
-                            >Logo</NavLink>
+                            exact to="/"
+                            className="logo-name"
+                        ><img src={logo} alt=""/><p>Spice Inn</p></NavLink>
                         <div>
-                            <p className="nav-button" onClick={this.openNav}>&#9776;</p>
+                            <p className="nav-button" onClick={this.openNav}>{this.state.opened?<p>&#9776;</p>:<p>&#10005;</p>}</p>
                         </div> 
                     </div>
                     

@@ -5,7 +5,7 @@ import { NavLink, useRouteMatch } from 'react-router-dom'
 const MenuHeader = () => {
     let { url } = useRouteMatch()    
     return (
-            <div className="d-flex justify-content-between  mx-auto menu-header">
+            <div className="d-flex justify-content-between shadow-lg  bg-white mx-auto menu-header">
                 <NavLink 
                     exact to={url+'/appetizers'}
                     activeClassName="selected-menu"
