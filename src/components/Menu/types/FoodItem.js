@@ -7,14 +7,14 @@ export default class FoodItem extends Component {
         const item = this.props.item
         return (
             <div className="food-card">
-                <img src={image} alt="" className="food-item-image"/>
+                <img src={item.photo} alt="" className="food-item-image"/>
                 <div className="food-text">
                     <div className="food-card-header">
-                        <p className="food-item-name">Hello world</p>
-                        <p className="food-item-price">90 $</p>
+                        <p className="food-item-name">{item.name}</p>
+                        <p className="food-item-price">{item.price}</p>
                     </div>
                     <div className="food-item-description">
-                        <p>Blah blah blah blahh!!!!!!!!!</p>
+                        <p>{item.desc}</p>
                     </div>
                 </div>
             </div>
