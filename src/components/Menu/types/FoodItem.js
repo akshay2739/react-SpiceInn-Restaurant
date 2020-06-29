@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import './FoodItem.css'
-import image from '../../../assets/images/img-01.jpg'
 
 export default class FoodItem extends Component {
     render() {

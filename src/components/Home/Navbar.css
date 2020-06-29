@@ -3,6 +3,42 @@
     padding:0px;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-2%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes shrink {
+  0% {
+    width: 95%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+.logo-nav-link{
+    color: black;
+    font-weight: 900;
+    font-size: 20px;
+}
+
 .header{
     display: flex;
     justify-content: space-between;
@@ -41,18 +77,14 @@
 }
 
 .nav-link{
-    color: black;
+    color: white;
     padding: 10px;
 }
 
-.nav-button{
-    display: none;
-}
-
-.selected{
-    background:#ad0023;
-    color: #ffffff;
-    padding: 10px;
+.ham-button p{
+    font-size: 30px;
+    margin-top: 5px;
+    color: #ad0023;
 }
 
 
@@ -61,11 +93,12 @@
     
     .header{
         display: flex;
-        flex-direction: column;
         justify-content: space-between;
         align-items: center;
         padding: 25px;
     }
+
+    
 
     .logo a{
         margin-left: 10px;

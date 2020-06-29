@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3aa5665a.chunk.css",
+    "main.js": "/static/js/main.b7f471c9.chunk.js",
+    "main.js.map": "/static/js/main.b7f471c9.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.5f83a215.js",
+    "runtime-main.js.map": "/static/js/runtime-main.5f83a215.js.map",
+    "static/js/2.5fb1f10d.chunk.js": "/static/js/2.5fb1f10d.chunk.js",
+    "static/js/2.5fb1f10d.chunk.js.map": "/static/js/2.5fb1f10d.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.c7b7a804b1cd6c620790c3bb12c1ee59.js": "/precache-manifest.c7b7a804b1cd6c620790c3bb12c1ee59.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.3aa5665a.chunk.css.map": "/static/css/main.3aa5665a.chunk.css.map",
+    "static/js/2.5fb1f10d.chunk.js.LICENSE.txt": "/static/js/2.5fb1f10d.chunk.js.LICENSE.txt",
+    "static/media/AlooTikkiChat.jpg": "/static/media/AlooTikkiChat.30b035ee.jpg",
+    "static/media/Combo1.jpg": "/static/media/Combo1.ebae855a.jpg",
+    "static/media/Combo2.jpg": "/static/media/Combo2.c4db1d4f.jpg",
+    "static/media/Combo3.jpg": "/static/media/Combo3.ebf98f42.jpg",
+    "static/media/Lassi.jpg": "/static/media/Lassi.272b5287.jpg",
+    "static/media/SamosaChhole.jpg": "/static/media/SamosaChhole.a8df6cbe.jpg",
+    "static/media/Spice Inn_GREEN PULAV.jpg": "/static/media/Spice Inn_GREEN PULAV.661ec7b1.jpg",
+    "static/media/SpiceInn_Pav Bhaji.jpg": "/static/media/SpiceInn_Pav Bhaji.82fe9f3f.jpg",
+    "static/media/SpiceInn_VegiePakora.jpg": "/static/media/SpiceInn_VegiePakora.00668c75.jpg",
+    "static/media/Spiceinn_PaneerPakore.jpg": "/static/media/Spiceinn_PaneerPakore.74dce53d.jpg",
+    "static/media/slider.css": "/static/media/background.04c40478.jpg",
+    "static/media/img-02.jpg": "/static/media/img-02.75a89afe.jpg",
+    "static/media/Contact.css": "/static/media/img-03.6534523b.jpg",
+    "static/media/logo.png": "/static/media/logo.7a758cb1.png",
+    "static/media/spice inn_Aloo Paratha.jpg": "/static/media/spice inn_Aloo Paratha.c2e5b2ae.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5f83a215.js",
+    "static/js/2.5fb1f10d.chunk.js",
+    "static/css/main.3aa5665a.chunk.css",
+    "static/js/main.b7f471c9.chunk.js"
+  ]
+}
